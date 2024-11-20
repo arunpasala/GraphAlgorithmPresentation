@@ -1,0 +1,155 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  scroll-behavior: smooth; /* Enables smooth scroll */
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #ff9800;
+}
+
+section {
+  padding: 20px;
+  margin: 10px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Graph Area */
+#graph {
+  text-align: center;
+  margin: 20px 0;
+}
+
+canvas {
+  border: 1px solid #ddd;
+  opacity: 0;
+  transform: scale(0.8);
+  animation: fadeInScale 1s ease forwards;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #008cba;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005f6b;
+}
+
+/* Map Placeholder */
+#map {
+  height: 300px;
+  width: 100%;
+  background: #eee;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+#map::before {
+  content: "Loading real-time data...";
+  font-size: 18px;
+  color: #555;
+  animation: pulse 2s infinite;
+}
+
+/* Animations */
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+}
+/* Back to Top Button */
+#backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  background-color: #008cba;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+#backToTop:hover {
+  background-color: #005f6b;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  background: url('your-image.jpg') no-repeat center center fixed;
+  background-size: cover; /* Ensures the image covers the screen */
+  color: #fff; /* Change text to white for readability */
+}
+
+section {
+  background: rgba(0, 0, 0, 0.6); /* Slightly transparent black background for contrast */
+  color: white; /* White text for better readability */
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* More prominent shadow */
+}
