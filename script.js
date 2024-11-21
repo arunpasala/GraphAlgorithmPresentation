@@ -88,7 +88,7 @@ window.addEventListener("scroll", () => {
 // Scroll Back to Top When Clicked
 backToTopButton.addEventListener("click", () => {
   window.scrollTo({
-    top: 0,
+    top: -50,
     behavior: "smooth"
   });
 });
